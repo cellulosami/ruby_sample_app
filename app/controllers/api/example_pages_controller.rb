@@ -6,4 +6,8 @@ class Api::ExamplePagesController < ApplicationController
   def goodbye_action
     render json: {message: "adios"}
   end
+
+  def smoothie_action
+    render xml: [{designation: "banana smoothie", ingredients: {milk: "three cups", bananas: ["one ripe", "two unripe", "three rotten"], durians: "eww no"}, price: "$3.50"}, {designation: "strawberry smoothie", ingredients: {milk: "three cups", strawberries: ["one ripe", "two unripe", "three rotten"], durians: "eww no"}, price: "$3.50"}]
+  end
 end

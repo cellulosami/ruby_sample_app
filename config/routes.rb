@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   namespace :api do
     get "/hello_path" => "example_pages#hello_action"
     get "/goodbye_path" => "example_pages#goodbye_action"
+    get "/smoothie_path" => "example_pages#smoothie_action"
   end
 end
